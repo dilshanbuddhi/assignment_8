@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    section{
+      position: relative;
+      width: 500px;
+      height: 1000px;
+      margin-right: auto;
+      margin-left: auto;
+      top: 200px;
+    }
+    body{
+      background-color: #5e6060;
+      overflow: hidden;
+    }
+    .box {
+      width: 100px;
+      aspect-ratio: 2/1;
+      margin:10px;
+    }
+    #first{
+      background-color: red;
+    }
+
+    #second{
+      background-color: aqua;
+    }
+
+    #third{
+      background-color: purple;
+    }
+
+    #fourth{
+      background-color: green;
+    }
+
+    #fifth{
+      background-color: cadetblue;
+    }
+
+    #sixth{
+      background-color: khaki;
+    }
+
+
+    #centerset{
+      display: flex;
+      flex-direction: row;
+    }
+    #sixth{
+      position: absolute;
+      right: 0;
+    }
+  </style>
+</head>
+<body>
+
+<section>
+  <div id="first" class="box"></div>
+  <h1>_______________________________________</h1>
+  <div id="centerset">
+    <div id="second" class="box"></div>
+    <div id="third" class="box"></div>
+    <div id="fourth" class="box"></div>
+    <div id="fifth"class="box"></div>
+  </div>
+  <h1>_______________________________________</h1>
+  <div id="sixth" class="box"></div>
+</section>
+
+<script src="js/case2.js"></script>
+</body>
+</html>

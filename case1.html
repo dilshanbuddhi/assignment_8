@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            background-color: #5e6060;
+        }
+        section{
+            display: flex;
+        }
+        div{
+            margin: 20px;
+            width: 100px;
+            height: 100px;
+            background: #96b5d3;
+            display: flex;
+            border: 2px solid black;
+            justify-content: space-between;
+        }
+        section div h1{
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div><h1 id="one">A</h1></div>
+    <img src="assests/cute-cartoon.gif" width="150" alt="">
+    <div><h1 id="two">A</h1></div>
+    <img src="assests/cute-cartoon.gif" width="150" alt="">
+    <div><h1 id="tree">A</h1></div>
+    <img src="assests/cute-cartoon.gif" width="150" alt="">
+    <div><h1 id="four">A</h1></div>
+    <img src="assests/cute-cartoon.gif" width="150" alt="">
+    <div><h1 id="five">A</h1></div>
+    <img src="assests/cute-cartoon.gif" width="150" alt="">
+    <div><h1 id="six">A</h1></div>
+
+</section>
+
+
+<script>
+    let ary = ["A","B","C","D","E","F"];
+
+    setInterval(() =>{
+        let lastvalue = ary.pop();
+        ary.unshift(lastvalue);
+        document.getElementById("one").innerText=ary[0];
+        document.getElementById("two").innerText=ary[1];
+        document.getElementById("tree").innerText=ary[2];
+        document.getElementById("four").innerText=ary[3];
+        document.getElementById("five").innerText=ary[4];
+        document.getElementById("six").innerText=ary[5];
+        console.log(ary)
+    },3000);
+
+    /* for (let i = 0; i < 10; i++) {
+
+         let lastIndex = ary[5];
+         let firstIndex = ary[0];
+         ary[0]= lastIndex;
+         ary[5]=firstIndex;
+
+         console.log("ssss", ary)
+         setInterval(() =>{
+         },3000);    }*/
+</script>
+</body>
+</html>
